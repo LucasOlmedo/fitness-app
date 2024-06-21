@@ -1,0 +1,25 @@
+/* src/components/body-map/BodyMap.css */
+.MuscleViewer {
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.MuscleViewer>div {
+    max-width: 220px;
+    height: 65vh;
+    position: relative;
+}
+
+.MuscleViewer polygon {
+    cursor: pointer;
+    transition: fill 0.3s ease-in-out;
+}
+
+.MuscleViewer polygon:hover {
+    fill: rgb(122, 128, 135) !important;
+}
+
+.MuscleViewer polygon[selected="true"] {
+    fill: rgb(140, 146, 152) !important;
+}
